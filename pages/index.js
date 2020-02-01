@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <main>
+      <main className={classes.main}>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
@@ -46,7 +46,13 @@ export default function Home() {
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    Download Course Power Point
+                    <a
+                      href={`/handouts/lecture_slides.pptx`}
+                      className={classes.a}
+                      download
+                    >
+                      Download Lecture Slides
+                    </a>
                   </Button>
                 </Grid>
               </Grid>

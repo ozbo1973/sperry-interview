@@ -14,6 +14,9 @@ const style = makeStyles(theme => ({
   toolbar: {
     color: "#fff"
   },
+  main: {
+    height: "85vh"
+  },
   questionPaper: {
     marginTop: theme.spacing(2),
     padding: theme.spacing(2)
