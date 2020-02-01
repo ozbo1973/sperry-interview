@@ -2,6 +2,7 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import Nav from "../src/components/nav";
+import Footer from "../src/components/footer";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
@@ -32,6 +33,7 @@ export default class MyApp extends App {
           <CssBaseline />
           <Nav />
           <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
       </React.Fragment>
     );

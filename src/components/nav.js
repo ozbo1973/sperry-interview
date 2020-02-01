@@ -8,14 +8,15 @@ const Nav = () => {
   const router = useRouter();
   return (
     <AppBar position="relative">
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <IconButton
           className={classes.iconButton}
           onClick={() => router.push("/")}
+          color="inherit"
         >
           <ClassIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Psych 1010: Research Methods
+            Module 02: Research Methods
           </Typography>
         </IconButton>
       </Toolbar>

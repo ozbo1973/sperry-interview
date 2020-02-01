@@ -4,54 +4,27 @@ import {
   Grid,
   List,
   ListItem,
-  Paper,
-  Button,
-  IconButton
+  Paper
 } from "@material-ui/core";
-import HomeIcon from "@material-ui/icons/Home";
-import PDFIcon from "@material-ui/icons/PictureAsPdf";
-import { useRouter } from "next/router";
+import HandoutHero from "../src/components/handouts/hero";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import useStyles from "../src/styles/main.styles";
 
 const Study = () => {
   const classes = useStyles();
-  const router = useRouter();
+  const PDF_PATH = `/handouts/study.pdf`;
+  const HANDOUT_TITLE = "Design A Study";
 
   return (
     <main>
       {/* Hero unit */}
-      <div className={classes.heroContent}>
-        <Container maxWidth="sm">
-          <Typography
-            component="h1"
-            variant="h3"
-            align="center"
-            className={classes.headerText}
-            gutterBottom
-          >
-            Design a Study
-          </Typography>
-          <div className={classes.questionBtnContainer}>
-            <IconButton onClick={() => router.push("/")} color="primary">
-              <HomeIcon className={classes.icon} />
-            </IconButton>
-            <IconButton color="primary">
-              <a
-                href={`/handouts/study.pdf`}
-                style={{ paddingTop: "3px" }}
-                className={classes.a}
-                download
-              >
-                <PDFIcon color="primary" className={classes.icon} />
-              </a>
-            </IconButton>
-          </div>
-        </Container>
-        {/* End hero unit */}
-      </div>
+      <HandoutHero handoutTitle={HANDOUT_TITLE} pdfPath={PDF_PATH} />
+
+      {/* questions */}
       <Container maxWidth="md">
         <Grid container spacing={4}>
           <Grid item>
+            {/* Question 00 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
@@ -79,77 +52,102 @@ const Study = () => {
                 </Paper>
               </Grid>
             </Grid>
+            {/* Question 01 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
                     1. What is your independent variable? What is your dependent
-                    variable? (Remember the{" "}
-                    <span className={classes.questionEm}>I.V.</span> would be
-                    causing a change in the D.V.)
+                    variable?{" "}
+                    <span className={classes.questionEm}>
+                      (Remember the I.V. would be causing a change in the D.V.)
+                    </span>
                   </Typography>
                   <List dense>
-                    <ListItem>I.V.</ListItem>
-                    <ListItem>D.V.</ListItem>
+                    <ListItem className={classes.questionEm}>
+                      I.V. <ArrowForwardIcon className={classes.icon} />
+                    </ListItem>
+                    <ListItem className={classes.questionEm}>
+                      D.V. <ArrowForwardIcon className={classes.icon} />
+                    </ListItem>
                   </List>
                 </Paper>
               </Grid>
             </Grid>
-
+            {/* Question 02 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
-                    2. Design an experimental study to investigate these
-                    variables. What will be the basic procedure of the
-                    experiment? Which variable will you manipulate and how?
-                    (Hint: random assignment, manipulate, measure)
+                    2. Design{" "}
+                    <span className={classes.questionEm}>
+                      {" "}
+                      an experimental study{" "}
+                    </span>
+                    to investigate these variables. What will be the basic
+                    procedure of the experiment? Which variable will you
+                    manipulate and how?
+                    <span className={classes.questionEm}>
+                      (Hint: random assignment, manipulate, measure)
+                    </span>
                   </Typography>
                 </Paper>
               </Grid>
             </Grid>
-
+            {/* Question 03 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
-                    3. Do any ethical and/or practical (i.e., time, money,
-                    logistics) issues arise?
+                    3. Do any{" "}
+                    <span className={classes.questionEm}>ethical</span> and/or{" "}
+                    <span className={classes.questionEm}>
+                      practical (i.e., time, money, logistics)
+                    </span>{" "}
+                    issues arise?
                   </Typography>
                 </Paper>
               </Grid>
             </Grid>
-
+            {/* Question 04 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
-                    4. Now, using the same variables, design a correlational
-                    study to investigate the relationship between these two
-                    variables. What is the main difference between this and the
-                    experiment described above?
+                    4. Now, using the same variables, design{" "}
+                    <span className={classes.questionEm}>
+                      a correlational study
+                    </span>{" "}
+                    to investigate the relationship between these two variables.
+                    What is the main difference between this and the experiment
+                    described above?
                   </Typography>
                 </Paper>
               </Grid>
             </Grid>
-
+            {/* Question 05 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
-                    5.Assume that your study produces a significant correlation
+                    5.Assume that your study produces{" "}
+                    <span className={classes.questionEm}>
+                      a significant correlation
+                    </span>
                     between the two variables. Draw the graph of the results.
                   </Typography>
                 </Paper>
               </Grid>
             </Grid>
-
+            {/* Question 06 */}
             <Grid container>
               <Grid item xs>
                 <Paper className={classes.questionPaper}>
                   <Typography component="h4">
-                    6. If there was a significant correlation between your two
-                    variables, does this mean that one variable causes the other
+                    6. If there was a significant{" "}
+                    <span className={classes.questionEm}>correlation</span>{" "}
+                    between your two variables, does this mean that one variable{" "}
+                    <span className={classes.questionEm}>causes</span> the other
                     variable? EXPLAIN.
                   </Typography>
                 </Paper>

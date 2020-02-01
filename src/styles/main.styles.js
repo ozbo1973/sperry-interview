@@ -1,15 +1,18 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const style = makeStyles(theme => ({
-  iconButton: {
-    color: "#fff"
-  },
+  // iconButton: {
+  //   color: "#fff"
+  // },
   icon: {
     marginRight: theme.spacing(2)
   },
   a: {
     color: "inherit",
     textDecoration: "inherit"
+  },
+  toolbar: {
+    color: "#fff"
   },
   questionPaper: {
     marginTop: theme.spacing(2),
@@ -56,8 +59,9 @@ const style = makeStyles(theme => ({
   },
   footer: {
     backgroundColor: theme.palette.primary.main,
-    padding: theme.spacing(6),
-    color: "#fff"
+    padding: theme.spacing(5),
+    color: "#fff",
+    marginTop: "0.7rem"
   },
   copyright: {
     color: "#fff"
