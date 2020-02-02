@@ -72,7 +72,7 @@ export default function Home() {
             Hand-Outs
           </Typography>
 
-          <Grid container spacing={4}>
+          <Grid className={classes.handouts} container spacing={4}>
             {handouts.map(handout => (
               <CardDisplay
                 key={handout.title}
