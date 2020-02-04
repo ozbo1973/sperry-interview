@@ -1,15 +1,20 @@
 import React from "react";
+import Head from "next/head";
 import useStyles from "../src/styles/main.styles";
 import handouts from "../src/data/handouts";
 import CardDisplay from "../src/components/cardDisplay";
 import ActionButtons from "../src/components/handouts/cardButtons";
-import { Button, Grid, Typography, Container } from "@material-ui/core";
+import ObjectivesDisplay from "../src/components/objectiveDisplay";
+import { Button, Grid, Typography, Container, List } from "@material-ui/core";
 
 export default function Home() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
+      <Head>
+        <title>Research Methods Home</title>
+      </Head>
       <main className={classes.main}>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -23,31 +28,25 @@ export default function Home() {
             >
               Research Methods
             </Typography>
+
             <Typography
               component="h3"
-              variant="h5"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
-              Course Objectives
-            </Typography>
-            <Typography
               variant="h5"
               align="center"
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              By the end of this module, you will be able to:
             </Typography>
+            <List component="ul">
+              <ObjectivesDisplay />
+            </List>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
                     <a
-                      href={`/handouts/lecture_slides.pptx`}
+                      href={`/handouts/lecture_slides.ppt`}
                       className={classes.a}
                       download
                     >

@@ -22,7 +22,7 @@ export default function Hero({ handoutTitle, pdfPath }) {
         </Typography>
         <div className={classes.questionBtnContainer}>
           <IconButton onClick={() => router.push("/")} color="primary">
-            <HomeIcon className={classes.icon} />
+            <HomeIcon fontSize="large" className={classes.icon} />
           </IconButton>
           <IconButton color="primary">
             <a
@@ -31,7 +31,11 @@ export default function Hero({ handoutTitle, pdfPath }) {
               className={classes.a}
               download
             >
-              <PDFIcon color="primary" className={classes.icon} />
+              <PDFIcon
+                fontSize="large"
+                color="primary"
+                className={classes.icon}
+              />
             </a>
           </IconButton>
         </div>

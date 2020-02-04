@@ -2,7 +2,7 @@ const handouts = [
   {
     title: "Correlation Coefficients",
     page: "coefficients",
-    description: "Exercises to draw plotting charts to determine blah"
+    description: "Exercises to draw plotting charts to determine correlation"
   },
   {
     title: "Independent and Dependent Variables",

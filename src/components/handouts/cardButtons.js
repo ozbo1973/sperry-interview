@@ -1,23 +1,15 @@
-import { useRouter } from "next/router";
 import useStyles from "../../styles/main.styles";
 import { Button } from "@material-ui/core";
 
 export default function ActionButtons({ handout }) {
   const classes = useStyles();
-  const router = useRouter();
-
-  const handleViewClick = pg => {
-    router.push(pg);
-  };
 
   return (
     <>
-      <Button
-        onClick={handleViewClick.bind(this, `/${handout.page}`)}
-        size="small"
-        color="primary"
-      >
-        View
+      <Button size="small" color="primary">
+        <a className={classes.a} href={`/${handout.page}`}>
+          View
+        </a>
       </Button>
       <Button size="small" color="primary">
         <a

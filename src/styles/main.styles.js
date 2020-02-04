@@ -15,7 +15,7 @@ const style = makeStyles(theme => ({
     color: "#fff"
   },
   handouts: {
-    marginTop: "1rem"
+    marginTop: "1.5rem"
   },
   // main: {
   //   height: "85vh"
@@ -39,7 +39,7 @@ const style = makeStyles(theme => ({
   },
   subHeaderText: {
     color: theme.palette.secondary.main,
-    marginBottom: "1rem"
+    marginBottom: "1.rem"
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
