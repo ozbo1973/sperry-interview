@@ -14,6 +14,7 @@ export default function ActionButtons({ handout }) {
       <Button size="small" color="primary">
         <a
           href={`/handouts/${handout.page}.pdf`}
+          target="_blank"
           className={classes.a}
           download
         >

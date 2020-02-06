@@ -2,17 +2,17 @@ const handouts = [
   {
     title: "Correlation Coefficients",
     page: "coefficients",
-    description: "Exercises to draw plotting charts to determine correlation"
+    description: "Practice drawing scatter plots from correlation coefficients."
   },
   {
     title: "Independent and Dependent Variables",
     page: "variables",
-    description: "Excersices comparing variables"
+    description: "Identify the IV and DV."
   },
   {
     title: "Design A Study",
     page: "study",
-    description: "Excercise at designing a basic study."
+    description: "Practice designing an experimental study."
   }
 ];
 

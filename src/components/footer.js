@@ -8,15 +8,7 @@ export default function Footer() {
   return (
     <footer className={classes.footer}>
       <Typography variant="h6" align="center" gutterBottom>
-        Property of Dr Kathryn Sperry.
-      </Typography>
-      <Typography
-        variant="subtitle1"
-        align="center"
-        color="inherit"
-        component="p"
-      >
-        ## of years experience teaching Research Methods
+        Property of Kathryn Sperry, Ph.D.
       </Typography>
       <Copyright />
     </footer>

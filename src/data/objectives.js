@@ -12,11 +12,7 @@ export default [
     id: 2,
     objective: "Describe the main limitations of correlation research."
   },
-  {
-    id: 3,
-    objective:
-      "Apply the directionality issue and third variable problem to correlated variables."
-  },
+
   {
     id: 4,
     objective:

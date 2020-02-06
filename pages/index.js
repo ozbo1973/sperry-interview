@@ -68,7 +68,7 @@ export default function Home() {
             className={classes.subHeaderText}
             gutterBottom
           >
-            Hand-Outs
+            Handouts
           </Typography>
 
           <Grid className={classes.handouts} container spacing={4}>

@@ -6,8 +6,7 @@ export default function Copyright() {
   return (
     <Typography variant="body2" className={classes.copyright} align="center">
       {"Copyright © "}
-      Dr. Sperry Interview
-      {new Date().getFullYear()}
+      Sperry Teaching Demo {new Date().getFullYear()}
       {"."}
     </Typography>
   );
